@@ -6,6 +6,7 @@ function validate(){
     var password = document.getElementById("password").value;
          if (( username == "aviramjeeawon@gmail.com" && password == "avi") || (username == "vidhipriya@gmail.com" && password == "vidhi")){
              alert ("Login successfully");
+             window.location = "html/main.html"
 //window.location = "success.html"; // Redirecting to other page.
          return false;}
          else{
