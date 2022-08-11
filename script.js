@@ -90,57 +90,58 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
-
 let currentQuiz = 0
 let score = 0
-
+function set_pro_width (){document.getElementById("bar").style.width = t-- +"%" 
+//console.log("hello")
+//console.log(t)
+document.getElementById("bar").innerHTML = t+"%"
+}
+t= 100
 loadQuiz()
-
+function start_timer(){
+    t=100
+   setInterval(set_pro_width,1000)
+}
 function loadQuiz() {
+    start_timer()
     deselectAnswers()
-
     const currentQuizData = quizData[currentQuiz]
-
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
     d_text.innerText = currentQuizData.d
 }
-
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
-
 function getSelected() {
     let answer
-
     answerEls.forEach(answerEl => {
         if(answerEl.checked) {
             answer = answerEl.id
         }
     })
-
     return answer
 }
-
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-
     if(answer) {
         if(answer === quizData[currentQuiz].correct) {
             score++
         }
-
         currentQuiz++
-
         if(currentQuiz < quizData.length) {
             loadQuiz()
+            let left = quizData.length - currentQuiz
+            let left1 = document.getElementsByClassName("quest_left")[0].innerHTML = "You have "+ left +" question left"
         } else {
+            document.body.style.backgroundImage = "url('https://c.tenor.com/i0qgtUWM3mwAAAAC/congratulations.gif')"
             quiz.innerHTML = `
                 <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-
                 <button onclick="location.reload()">Reload</button>
+                <button onclick="location.href='../html/main.html'">Back</button>
             `
         }
     }
