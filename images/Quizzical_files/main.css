@@ -1,10 +1,5 @@
-@media only screen and (max-width: 600px) {
-    .tohide {
-      display: none;
-    }
-  }
-body{
-  font-family: Aldrich;
+ body{
+      font-family: Aldrich;
     }
 #quoteOne,#quoteTwo,#quoteThree{
      font-family: 'Edu VIC WA NT Beginner', cursive;}
@@ -21,7 +16,7 @@ body{
    }
    }
 @media only screen and (min-width: 992px) {
-  .navbar .navbar-nav {
+.navbar .navbar-nav {
     border-bottom: 2px solid #3C4CAD;
   }
 .navbar .nav-item {

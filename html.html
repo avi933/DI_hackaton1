@@ -2,33 +2,103 @@
 <html>
 <head>
   <style>
-    #intro {
-      /* Margin to fix overlapping fixed navbar */
-      margin-top: 58px;
-    }
-
-    @media (max-width: 991px) {
+    <style>
       #intro {
         /* Margin to fix overlapping fixed navbar */
-        margin-top: 45px;
+        margin-top: 58px;
       }
+  
+      @media (max-width: 991px) {
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 45px;
+        }
+      }
+  
+    .navbar .navbar-nav .nav-link {
+      color: #000000;
+      font-size: 1.1em;
     }
-  </style>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
- 
- 
+    .navbar .navbar-nav .nav-link:hover{
+      color: #808080;
+    }
+     @media only screen and (min-width: 992px) {
+    .navbar {
+      flex-direction: column;
+     }
+     }
+     @media only screen and (min-width: 992px) {
+    .navbar .navbar-nav {
+      border-bottom: 2px solid #3C4CAD;
+    }
+    .navbar .nav-item {
+      padding: 0.5em 2em;
+    }
+  }
+  .navbar .navbar-nav {
+    margin-top: 0.5em;
+    border-top: 2px solid #3C4CAD;
+  }
+    </style>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+   
+   
  
  
 </head>
     
    
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+      <a class="navbar-brand" href="#"><img src="Quizzical-1.png" class="rounded-pill" height="100px" width="170px"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+      
+      <ul class="navbar-nav mx-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+         </li>
+       </ul>
+         <ul class="navbar-nav d-flex flex-row">
+               <!-- Icons -->
+               <li class="nav-item me-3 me-lg-0">
+                 <a class="nav-link" href="https://www.youtube.com" rel="nofollow"
+                   target="_blank">
+                   <i class="fab fa-youtube"></i>
+                 </a>
+               </li>
+               <li class="nav-item me-3 me-lg-0">
+                 <a class="nav-link" href="https://www.facebook.com" rel="nofollow" target="_blank">
+                   <i class="fab fa-facebook-f"></i>
+                 </a>
+               </li>
+               <li class="nav-item me-3 me-lg-0">
+                 <a class="nav-link" href="https://twitter.com" rel="nofollow" target="_blank">
+                   <i class="fab fa-twitter"></i>
+                 </a>
+               </li>
+               <li class="nav-item me-3 me-lg-0">
+                 <a class="nav-link" href="https://github.com" rel="nofollow" target="_blank">
+                   <i class="fab fa-github"></i>
+                 </a>
+               </li>
+             </ul>
+       </ul>
+     </div>
+            
+           </div>
+         </div>
+       </nav>
     <!-- Jumbotron -->
     <div id="intro" class="p-5 text-center bg-light">
-      <h1 class="mb-0 h4">This is a long title of the article</h1>
+      <h1 class="mb-0 h4">HTML</h1>
     </div>
     <!-- Jumbotron -->
   </header>
@@ -43,15 +113,15 @@
         <div class="col-md-8 mb-4">
           <!--Section: -->
           <section class="border-bottom mb-4">
-            <img src="  "
-              class="img-fluid shadow-2-strong rounded-5 mb-4" alt="" />
+            <img src="https://www.loadedmedia.com/wp-content/uploads/2022/05/Web-Development.jpg"
+              class="img-fluid shadow-2-strong rounded-5 mb-4" alt="" height="100px" />
 
             <div class="row align-items-center mb-4">
               <div class="col-lg-6 text-center text-lg-start mb-3 m-lg-0">
                 <img src="  " class="rounded-5 shadow-1-strong me-2"
                   height="35" alt="" loading="lazy" />
-                <span> Published <u>15.07.2020</u> by</span>
-                <a href="" class="text-dark">Anna</a>
+                <span> Published <u>09.08.2022</u> by</span>
+                <a href="" class="text-dark">Vidhipriya</a>
               </div>
 
               <div class="col-lg-6 text-center text-lg-end">
@@ -75,50 +145,29 @@
           <!--Section: Text-->
           <section>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio sapiente molestias
-              consectetur. Fuga nulla officia error placeat veniam, officiis rerum laboriosam
-              ullam molestiae magni velit laborum itaque minima doloribus eligendi! Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Optio sapiente molestias consectetur.
-              Fuga nulla officia error placeat veniam, officiis rerum laboriosam ullam molestiae
-              magni velit laborum itaque minima doloribus eligendi!
-            </p>
-
-            <p><strong>Optio sapiente molestias consectetur?</strong></p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum architecto ex ab aut
-              tempora officia libero praesentium, sint id magnam eius natus unde blanditiis. Autem
-              adipisci totam sit consequuntur eligendi.
-            </p>
-
-            <p class="note note-light">
-              <strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Optio odit consequatur porro sequi ab distinctio modi. Rerum cum dolores sint,
-              adipisci ad veritatis laborum eaque illum saepe mollitia ut voluptatum.
-            </p>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, libero repellat
-              molestiae aperiam laborum aliquid atque magni nostrum, inventore perspiciatis
-              possimus quia incidunt maiores molestias eaque nam commodi! Magnam, labore.
+              The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
+               It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+              Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia
+               web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance
+                of the document.
+              HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
+               interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents 
+               by denoting structural semantics
+              for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags,
+               written using angle brackets. Tags such asimg and input directly introduce content into the page. Other tags such as <p> 
+              surround and provide information about document text and may include other tags as sub-elements. Browsers do not
+               display the HTML tags but use them to interpret the content of the page.
+              HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and
+               content of web pages. Inclusion of CSS defines the look and layout of content. 
+               The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards,
+                has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form of HTML, known as HTML5,
+                 is used to display video and audio, primarily using the canvas element, in collaboration with javascript.
             </p>
 
             <img src=" " class="img-fluid shadow-1-strong rounded-5 mb-4"
               alt="" />
 
-            <ul>
-              <li>Lorem</li>
-              <li>Ipsum</li>
-              <li>Dolor</li>
-              <li>Sit</li>
-              <li>Amet</li>
-            </ul>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, temporibus nulla
-              voluptatibus accusantium sapiente doloremque. Doloribus ratione laboriosam culpa. Ab
-              officiis quidem, debitis nostrum in accusantium dolore veritatis eius est?
-            </p>
+        
           </section>
           <!--Section: Text-->
 
@@ -145,19 +194,18 @@
           <section class="border-bottom mb-4 pb-4">
             <div class="row">
               <div class="col-3">
-                <img src="  "
-                  class="img-fluid shadow-1-strong rounded-5" alt="" />
+                <img src="https://apollo-singapore.akamaized.net/v1/files/fsbseb7aul29-IN/image;s=943x0;q=60" class="z-depth-1 rounded-circle" alt="Second sample avatar image" height="200px" />
               </div>
 
               <div class="col-9">
-                <p class="mb-2"><strong>Anna Maria Doe</strong></p>
+                <p class="mb-2"><strong>Vidhipriya</strong></p>
                 <a href="" class="text-dark"><i class="fab fa-facebook-f me-1"></i></a>
                 <a href="" class="text-dark"><i class="fab fa-twitter me-1"></i></a>
                 <a href="" class="text-dark"><i class="fab fa-linkedin me-1"></i></a>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
-                  inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
-                  Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
+                    inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
+                    Repellendus alias dolor ad nam, soluta distinctio quis accusantium!
                 </p>
               </div>
             </div>
@@ -176,7 +224,7 @@
               </div>
 
               <div class="col-10">
-                <p class="mb-2"><strong>Marta Dolores</strong></p>
+                <p class="mb-2"><strong>John Doe</strong></p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
                   inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
@@ -193,7 +241,7 @@
               </div>
 
               <div class="col-10">
-                <p class="mb-2"><strong>Valeria Groove</strong></p>
+                <p class="mb-2"><strong>Jane Doe</strong></p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
                   inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
@@ -210,7 +258,7 @@
               </div>
 
               <div class="col-10">
-                <p class="mb-2"><strong>Antonia Velez</strong></p>
+                <p class="mb-2"><strong>Beau Seau</strong></p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est ab iure
                   inventore dolorum consectetur? Molestiae aperiam atque quasi consequatur aut?
@@ -264,18 +312,39 @@
 
         
         
+        <div class="col-md-4 mb-4">
+          <!--Section: Sidebar-->
+          <section class="sticky-top" style="top: 80px;">
+            <!--Section: Ad-->
+            <section class="text-center border-bottom pb-4 mb-4">
+              <div class="bg-image hover-overlay ripple mb-4">
+                <img
+                  src="Premium-logos.jpeg"
+                  class="img-fluid" />
+                <a href="premium.html" target="_blank">
+                  <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+                </a>
+              </div>
+              <h5>Unlock our Premium package</h5>
+
+              <p>
+               Quiz,User account,Quiz duels,Create your own quiz,
+               unrestricted access to our other products,Lifetime Usage
+              </p>
+              <a role="button" class="btn btn-primary" href="premium.html"
+                target="_blank">Get now<i class="fas fa-download ms-2"></i></a>
+            </section>
+            <!--Section: Ad-->
+
+           
+          <!--Section: Sidebar-->
+        </div>
+        <!--Grid column-->
             <!--Section: Ad-->
 
             <!--Section: Video-->
             <section class="text-center">
-              <h5 class="mb-4">Learn the newest Bootstrap 5</h5>
-
-              <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
-                <iframe class="embed-responsive-item rounded-5" src="https://www.youtube.com"
-                  allowfullscreen></iframe>
-              </div>
-            </section>
-            <!--Section: Video-->
+          
           </section>
           <!--Section: Sidebar-->
         </div>
@@ -313,4 +382,4 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright:
-      <a class="text-dark" href="Qu
+      <a class="text-dark" href="Quizzical-1.png"  > </a>
