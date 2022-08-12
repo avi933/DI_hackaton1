@@ -1,4 +1,3 @@
-
 document.getElementById("login").addEventListener("click", validate);
  var attempt = 3;
 function validate(){ 
@@ -6,6 +5,7 @@ function validate(){
     var password = document.getElementById("password").value;
          if (( username == "aviramjeeawon@gmail.com" && password == "avi") || (username == "vidhipriya@gmail.com" && password == "vidhi")){
              alert ("Login successfully");
+             window.location="html/main.html"
 //window.location = "success.html"; // Redirecting to other page.
          return false;}
          else{
@@ -16,5 +16,3 @@ function validate(){
              document.getElementById("password").disabled = true;
              document.getElementById("submit").disabled = true;
           return false;}}}
-
-
